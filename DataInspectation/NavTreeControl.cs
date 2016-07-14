@@ -148,7 +148,6 @@ namespace DataInspectation.Controls
         public event SelectedWellChangedEventHandler SelectedWellChanged;
     }
     public delegate void SelectedWellChangedEventHandler(object sender, SelectedWellChangedEventArgs e);
-
     public class SelectedWellChangedEventArgs
     {
         public string BZJH { get; set; }
