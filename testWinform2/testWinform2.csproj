@@ -112,6 +112,9 @@
       <HintPath>..\packages\OGT.Common.Utils.1.0.0\lib\net40\OGT.Common.Utils.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="OGT.Common.WinForm">
+      <HintPath>..\packages\OGT.Common.WinForm.1.0.55\lib\net40\OGT.Common.WinForm.dll</HintPath>
+    </Reference>
     <Reference Include="OGT.DataLoader.Entity, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\OGT.DataLoader.Entity.dll</HintPath>
@@ -219,6 +222,10 @@
     <ProjectReference Include="..\DataAxes\DataAxes.csproj">
       <Project>{4E22B033-ECEC-4F3B-8682-D3949D3E68B1}</Project>
       <Name>DataAxes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataInspectation\DataInspectation.csproj">
+      <Project>{65A7A9EB-FC29-43BD-AFC7-0667297657E0}</Project>
+      <Name>DataInspectation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
