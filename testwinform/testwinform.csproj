@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA6EAB6E-3223-478D-95D1-A50A7802322C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>testwinform</RootNamespace>
+    <AssemblyName>testwinform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v11.2.Core, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\test\dll\DevExpress.Data.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Localization.v11.2, Version=11.2.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Localization.v11.2.1.0.0\lib\DevExpress.Localization.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Tutorials.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\test\dll\DevExpress.Utils.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v11.2.UI, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\test\dll\DevExpress.XtraEditors.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\test\dll\DevExpress.XtraTreeList.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.4.1.0.0\lib\NET40\Microsoft.Expression.Interactions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.4.1.0.0\lib\NET40\Microsoft.Practices.Prism.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Interactivity, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.4.1.0.0\lib\NET40\Microsoft.Practices.Prism.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.UnityExtensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.UnityExtensions.4.1.0.0\lib\NET40\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NBear.Common, Version=3.7.2.6, Culture=neutral, PublicKeyToken=f6134b09b3197389, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\NBear.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NBear.Data, Version=3.7.2.6, Culture=neutral, PublicKeyToken=f6134b09b3197389, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\NBear.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.1.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Common.DbLogin.1.0.1.0\lib\net40\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Basic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Basic.1.1.0.6\lib\net40\OGT.Basic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.C5, Version=2.1.0.0, Culture=neutral, PublicKeyToken=1d5a719d42d9062e, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.C5.2.1.0\lib\net40\OGT.C5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Common.CmdLine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Common.CmdLine.1.0.0\lib\net40\OGT.Common.CmdLine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Common.DbConnModule">
+      <HintPath>C:\Users\Administrator\OneDrive\SHYYZHYJ\Code\packages\OGT.Common.DbConnModule.1.0.1\lib\net40\OGT.Common.DbConnModule.dll</HintPath>
+    </Reference>
+    <Reference Include="OGT.Common.DbLogin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Common.DbLogin.1.0.1.0\lib\net40\OGT.Common.DbLogin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Common.Extension, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Common.Extension.1.0.0\lib\net40\OGT.Common.Extension.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Common.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Common.Utils.1.0.0\lib\net40\OGT.Common.Utils.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Common.WinForm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Common.WinForm.1.0.55\lib\net40\OGT.Common.WinForm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Common.WPF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\OneDrive\SHYYZHYJ\Code\packages\OGT.Common.WPF.1.1.5\lib\net40\OGT.Common.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="OGT.DDLHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\OGT.DDLHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="OGT.DockingManager.Helper">
+      <HintPath>..\test\dll\OGT.DockingManager.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="OGT.Dynalyze.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\OGT.Dynalyze.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="OGT.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\OGT.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="OGT.Framework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Framework.Common.1.1.5.37\lib\net40\OGT.Framework.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Framework.Extensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Framework.1.1.6.22\lib\net40\OGT.Framework.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Framework.Infrastructure, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Framework.1.1.6.22\lib\net40\OGT.Framework.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Lic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d5a719d42d9062e, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Lic.1.1.3\lib\net40\OGT.Lic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Prism, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OGT.Framework.1.1.6.22\lib\net40\OGT.Prism.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OGT.Production.Infrastructure">
+      <HintPath>C:\Users\Administrator\OneDrive\SHYYZHYJ\Code\build\Debug\OGT.Production.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="OGT.XtraFilter.Helpers">
+      <HintPath>..\test\dll\OGT.XtraFilter.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="OGT.XtraNavTree.RuntimeSettings">
+      <HintPath>..\test\dll\OGT.XtraNavTree.RuntimeSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.022\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="StartOGTSoftAutoUpdate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StartOGTSoftAutoUpdate.1.0.0\lib\net40\StartOGTSoftAutoUpdate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChartDemoBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartDemoBase.Designer.cs">
+      <DependentUpon>ChartDemoBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DemosRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoBase.Designer.cs">
+      <DependentUpon>ChartDemoBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoBase2D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoBase2D.Designer.cs">
+      <DependentUpon>ChartDemoBase2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoForControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoForControls.Designer.cs">
+      <DependentUpon>ChartDemoForControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoHorizontalPanes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoHorizontalPanes.Designer.cs">
+      <DependentUpon>ChartDemoHorizontalPanes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoVerticalPanes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mudules\ChartDemoVerticalPanes.Designer.cs">
+      <DependentUpon>ChartDemoVerticalPanes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mudules\DS3.cs">
+      <DependentUpon>DS3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Mudules\DS3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Mudules\Menu.cs" />
+    <Compile Include="Mudules\UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WellBaseTreeNamesFactory.cs" />
+    <Compile Include="WellSummary.cs" />
+    <Compile Include="XtraNaviTreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraNaviTreeControl.Designer.cs">
+      <DependentUpon>XtraNaviTreeControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChartDemoBase.resx">
+      <DependentUpon>ChartDemoBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls.resx">
+      <DependentUpon>Controls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Mudules\DS3.xsc">
+      <DependentUpon>DS3.xsd</DependentUpon>
+    </None>
+    <Content Include="Mudules\DS3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS3.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="Mudules\DS3.xss">
+      <DependentUpon>DS3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mudules\ChartDemoBase.resx">
+      <DependentUpon>ChartDemoBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mudules\ChartDemoBase2D.resx">
+      <DependentUpon>ChartDemoBase2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mudules\ChartDemoForControls.resx">
+      <DependentUpon>ChartDemoForControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mudules\ChartDemoHorizontalPanes.resx">
+      <DependentUpon>ChartDemoHorizontalPanes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mudules\ChartDemoVerticalPanes.resx">
+      <DependentUpon>ChartDemoVerticalPanes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="XtraNaviTreeControl.resx">
+      <DependentUpon>XtraNaviTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataInspectation\DataInspectation.csproj">
+      <Project>{65a7a9eb-fc29-43bd-afc7-0667297657e0}</Project>
+      <Name>DataInspectation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Mudules\UserControl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
